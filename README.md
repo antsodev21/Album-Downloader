@@ -1,8 +1,9 @@
 # Información del Script
 Bueno, resulta que necesitaba descargar un álbum de música de un anime y con yt-dlp pude descargarlo pero no seguía el orden que debía así que le pregunte a Kimi que como se haría para solucionar este fallo y me creo un script que usa yt-dlp, necesita un modulo de Python llamado mutagen y depende de ffmpeg, para convertirlo a mp3 o flac.
 Volví a probar a descargarlo y no solo lo descargo como debía sino que también lo convirtió a flac.
+Ahora, el script puede sacar metadatos desde Deezer, aunque se puede seguir usando como antes.
 
-Como me pareció buen script a pesar que este vibecodeado pues lo subo a GitHub por si alguien quiere descargar algún álbum entero sin complicarse con todas las flags que usa yt-dlp
+Como me pareció buen script a pesar que este vibecodeado pues lo subo a GitHub por si alguien quiere descargar algún álbum entero sin complicarse con todas las options que usa yt-dlp
 
 # Instalación :
 Lo primero es descargar las dependencias que son : python, pip, pipx, ffmpeg y mutagen, el mutagen es muy importante que este instalado ya que tiene relación con el tema de metadatos y si los metadatos no están correctos pueden haber fallos con la organización del álbum y otras cosas.
@@ -22,6 +23,4 @@ Lo primero es descargar las dependencias que son : python, pip, pipx, ffmpeg y m
 - ```pipx inject yt-dlp mutagen```
 
 # Uso :
-- ```./YT-Album-Downloader 'url-del-album' [formato] [carpeta]```
-
-*La URL es obligatoria pero los demas parametros entre corchetes son opcionales*
+- ```./Album-Downloader.sh "URL_DE_YOUTUBE" -m "URL_DE_DEEZER"```
