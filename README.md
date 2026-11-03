@@ -23,4 +23,4 @@ Lo primero es descargar las dependencias que son : python, pip, pipx, ffmpeg y m
 - ```pipx inject yt-dlp mutagen```
 
 # Uso :
-- ```./Album-Downloader.sh "URL_DE_YOUTUBE" -m "URL_DE_DEEZER -f formato"```
+- ```./Album-Downloader.sh "URL_DE_YOUTUBE" -m "URL_DE_DEEZER" -f formato"```
